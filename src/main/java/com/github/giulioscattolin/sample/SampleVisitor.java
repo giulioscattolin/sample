@@ -1,7 +1,12 @@
 package com.github.giulioscattolin.sample;
 
 public interface SampleVisitor {
-    void visit(KeyValueSample keyValueSample);
+    default void visit(CompositeSample compositeSample) {
+    }
 
-    void visit(int value);
+    default void visit(KeyValueSample keyValueSample) {
+    }
+
+    default void visit(int value) {
+    }
 }
