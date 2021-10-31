@@ -1,3 +1,10 @@
+# [1.0.0-alpha.3](https://github.com/giulioscattolin/sample/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2021-10-31)
+
+
+### Features
+
+* implement BooleanKeyValueAssociation ([81e6861](https://github.com/giulioscattolin/sample/commit/81e6861b90a5b675f3b52453d38da678cd47826f))
+
 # [1.0.0-alpha.2](https://github.com/giulioscattolin/sample/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2021-10-31)
 
 
