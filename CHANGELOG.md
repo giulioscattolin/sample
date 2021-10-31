@@ -1,3 +1,15 @@
+# [1.0.0-alpha.2](https://github.com/giulioscattolin/sample/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2021-10-31)
+
+
+### Features
+
+* KeyValueSample keys are string ([1e75fa2](https://github.com/giulioscattolin/sample/commit/1e75fa2217a1c7cb0b2476715788fe3c4b95cbf8))
+
+
+### BREAKING CHANGES
+
+* KeyValueSample key type has been restricted to String to enable using keys in switch() statements.
+
 # 1.0.0-alpha.1 (2021-10-30)
 
 
