@@ -45,7 +45,7 @@ public class IntegerKeyValueAssociationTest {
             return itsInstance.isValueIncludedIn(sample);
         }
 
-        public Object getKey() {
+        public String getKey() {
             return "Age";
         }
     }

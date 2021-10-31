@@ -5,19 +5,19 @@ import java.util.Map;
 import java.util.function.UnaryOperator;
 
 public class MutableSingleMapKeyValueSample implements KeyValueSampleBuilder {
-    private final Map<Object, Object> itsMap;
-    private final UnaryOperator<Map<Object, Object>> itsMapDuplicator;
+    private final Map<String, Object> itsMap;
+    private final UnaryOperator<Map<String, Object>> itsMapDuplicator;
 
-    private MutableSingleMapKeyValueSample(UnaryOperator<Map<Object, Object>> duplicator, Map<Object, Object> initialMap) {
+    private MutableSingleMapKeyValueSample(UnaryOperator<Map<String, Object>> duplicator, Map<String, Object> initialMap) {
         itsMap = initialMap;
         itsMapDuplicator = duplicator;
     }
 
-    public static KeyValueSampleBuilder toKeyValueSampleBuilder(UnaryOperator<Map<Object, Object>> duplicator) {
+    public static KeyValueSampleBuilder toKeyValueSampleBuilder(UnaryOperator<Map<String, Object>> duplicator) {
         return toKeyValueSampleBuilder(duplicator, new HashMap<>());
     }
 
-    public static KeyValueSampleBuilder toKeyValueSampleBuilder(UnaryOperator<Map<Object, Object>> duplicator, Map<Object, Object> map) {
+    public static KeyValueSampleBuilder toKeyValueSampleBuilder(UnaryOperator<Map<String, Object>> duplicator, Map<String, Object> map) {
         return new MutableSingleMapKeyValueSample(duplicator, map);
     }
 
@@ -25,27 +25,27 @@ public class MutableSingleMapKeyValueSample implements KeyValueSampleBuilder {
         return new ImmutableSingleMapKeyValueSample(itsMapDuplicator, itsMapDuplicator.apply(itsMap));
     }
 
-    public KeyValueSampleBuilder insert(Object key, int value) {
+    public KeyValueSampleBuilder insert(String key, int value) {
         itsMap.put(key, value);
         return this;
     }
 
-    public KeyValueSampleBuilder insert(Object key, long value) {
+    public KeyValueSampleBuilder insert(String key, long value) {
         itsMap.put(key, value);
         return this;
     }
 
-    public KeyValueSampleBuilder insert(Object key, double value) {
+    public KeyValueSampleBuilder insert(String key, double value) {
         itsMap.put(key, value);
         return this;
     }
 
-    public KeyValueSampleBuilder insert(Object key, Object value) {
+    public KeyValueSampleBuilder insert(String key, Object value) {
         itsMap.put(key, value);
         return this;
     }
 
-    public KeyValueSampleBuilder remove(Object key) {
+    public KeyValueSampleBuilder remove(String key) {
         itsMap.remove(key);
         return this;
     }

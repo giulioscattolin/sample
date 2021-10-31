@@ -28,7 +28,7 @@ public abstract class GenericKeyValueAssociation<T> {
         return sample.getObject(getKey());
     }
 
-    public abstract Object getKey();
+    public abstract String getKey();
 
     public abstract Class<T> getValueClass();
 }

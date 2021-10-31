@@ -44,7 +44,7 @@ public class DoubleKeyValueAssociationTest {
             return itsInstance.isValueIncludedIn(sample);
         }
 
-        public Object getKey() {
+        public String getKey() {
             return "Temperature";
         }
     }

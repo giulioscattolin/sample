@@ -24,5 +24,5 @@ public abstract class IntegerKeyValueAssociation {
         return sample.hasInteger(getKey());
     }
 
-    public abstract Object getKey();
+    public abstract String getKey();
 }

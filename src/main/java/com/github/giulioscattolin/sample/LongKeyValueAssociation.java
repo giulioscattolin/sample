@@ -24,5 +24,5 @@ public abstract class LongKeyValueAssociation {
         return sample.hasLong(getKey());
     }
 
-    public abstract Object getKey();
+    public abstract String getKey();
 }

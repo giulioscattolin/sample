@@ -44,7 +44,7 @@ public class LongKeyValueAssociationTest {
             return itsInstance.isValueIncludedIn(sample);
         }
 
-        public Object getKey() {
+        public String getKey() {
             return "Age";
         }
     }

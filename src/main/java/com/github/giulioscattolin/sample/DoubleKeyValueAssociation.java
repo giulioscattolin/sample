@@ -24,5 +24,5 @@ public abstract class DoubleKeyValueAssociation {
         return sample.hasDouble(getKey());
     }
 
-    public abstract Object getKey();
+    public abstract String getKey();
 }

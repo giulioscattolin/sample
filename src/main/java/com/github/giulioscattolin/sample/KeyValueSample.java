@@ -7,19 +7,19 @@ public interface KeyValueSample extends Sample {
 
     KeyValueSampleBuilder toBuilder();
 
-    boolean hasInteger(Object key);
+    boolean hasInteger(String key);
 
-    boolean hasLong(Object key);
+    boolean hasLong(String key);
 
-    boolean hasDouble(Object key);
+    boolean hasDouble(String key);
 
-    boolean hasObject(Object key);
+    boolean hasObject(String key);
 
-    int getInteger(Object key);
+    int getInteger(String key);
 
-    long getLong(Object key);
+    long getLong(String key);
 
-    double getDouble(Object key);
+    double getDouble(String key);
 
-    Object getObject(Object key);
+    Object getObject(String key);
 }
