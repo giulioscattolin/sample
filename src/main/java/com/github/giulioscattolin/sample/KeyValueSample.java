@@ -7,6 +7,8 @@ public interface KeyValueSample extends Sample {
 
     KeyValueSampleBuilder toBuilder();
 
+    boolean hasBoolean(String key);
+
     boolean hasInteger(String key);
 
     boolean hasLong(String key);
@@ -14,6 +16,8 @@ public interface KeyValueSample extends Sample {
     boolean hasDouble(String key);
 
     boolean hasObject(String key);
+
+    boolean getBoolean(String key);
 
     int getInteger(String key);
 

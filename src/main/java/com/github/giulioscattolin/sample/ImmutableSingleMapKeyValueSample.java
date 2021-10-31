@@ -18,6 +18,10 @@ class ImmutableSingleMapKeyValueSample implements KeyValueSample {
         return toKeyValueSampleBuilder(itsDuplicator, itsDuplicator.apply(itsMap));
     }
 
+    public boolean hasBoolean(String key) {
+        return hasObject(key) && getObject(key) instanceof Boolean;
+    }
+
     public boolean hasInteger(String key) {
         return hasObject(key) && getObject(key) instanceof Integer;
     }
@@ -32,6 +36,10 @@ class ImmutableSingleMapKeyValueSample implements KeyValueSample {
 
     public boolean hasObject(String key) {
         return itsMap.containsKey(key);
+    }
+
+    public boolean getBoolean(String key) {
+        return (boolean) getObject(key);
     }
 
     public int getInteger(String key) {
